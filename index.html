@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Senai</title>
+</head>
+<body>
+    <div class="corpinho">
+    <div class="calculadora">
+        <input type="text" id="tela" class="tela" readonly>
+        <div class="botoes">
+            <button onclick="adicionarValor('7')">7</button>
+            <button onclick="adicionarValor('8')">8</button>
+            <button onclick="adicionarValor('9')">9</button>
+            <button onclick="adicionarValor('/')">/</button>
+            <br>
+            <button onclick="adicionarValor('4')">4</button>
+            <button onclick="adicionarValor('5')">5</button>
+            <button onclick="adicionarValor('6')">6</button>
+            <button onclick="adicionarValor('*')">*</button>
+            <br>
+            <button onclick="adicionarValor('1')">1</button>
+            <button onclick="adicionarValor('2')">2</button>
+            <button onclick="adicionarValor('3')">3</button>
+            <button onclick="adicionarValor('-')">-</button>
+            <br>
+            <button onclick="adicionarValor('.')">,</button>
+            <button onclick="adicionarValor('0')">0</button>
+            <button onclick="limparTela()" class="limpar" id="C">C</button>
+            <button onclick="adicionarValor('+')">+</button>
+            <br>
+            <button onclick="calcular()" class="igual">=</button>
+            <div class="apagar" id="apagar">    <button onclick="apagar()" id="apagar">&#9003;</button>
+        </div>
+    </div>   
+</div>
+<br>
+<footer>Feito e Desenvolvido por Luan Fernandes e Miguel Fabris</footer>
+    <script src="script.js"></script>
+</body>
+</html>
